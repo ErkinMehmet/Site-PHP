@@ -7,6 +7,9 @@
   <title>Self presentation</title>
 </head>
 <body onload="killt()">
+<?php error_reporting(0);       // Turn off error reporting
+ini_set('display_errors', 0);
+?>
 <?php include 'visitors.php';?>
 
 <div class="typewriter" id="typewriter" onclick="kill()">

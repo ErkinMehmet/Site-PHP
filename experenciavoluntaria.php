@@ -12,7 +12,7 @@ $reponse = $bdd->query("SELECT * FROM experenciavoluntaria") or die(print_r($bdd
 while ($donnees=$reponse->fetch()) {
 ?>
 
-<?php echo "&nbsp;&nbsp;&nbsp;&nbsp;".$donnees[ano]." - " ?><?php echo $donnees[organizacion]." - " ?><?php echo "<strong>".$donnees[posicion]."</strong>" ?><li> &nbsp;&nbsp;&nbsp;&nbsp;<?php echo $donnees[deber] ?></li><br/><br/>
+<?php echo "&nbsp;&nbsp;&nbsp;&nbsp;".$donnees['ano']." - " ?><?php echo $donnees['organizacion']." - " ?><?php echo "<strong>".$donnees['posicion']."</strong>" ?><li> &nbsp;&nbsp;&nbsp;&nbsp;<?php echo $donnees['deber'] ?></li><br/><br/>
 
 
 <?php

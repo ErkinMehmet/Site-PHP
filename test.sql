@@ -383,7 +383,7 @@ INSERT INTO `cursos` (`cours`, `description`, `note`, `annee`, `id`) VALUES
 ('CHE 416', 'Procesos de Pasos de Equilibro', 'A-', 4, 40),
 ('CHE 445', 'Análisis de Reactor Químico II', 'A-', 4, 41),
 ('CHE 446', 'Control y Dinámica de Procesos', 'A', 4, 42),
-('CHE 464', 'Diseño de Ingeniería Química I', 'A-', 4, 43),
+('CHE 464', 'Diseño de Ingeniería Quíhimica I', 'A-', 4, 43),
 ('ENG M 530', 'Administración de Proyectos Ingenieros', 'A-', 4, 44),
 ('CHE 454', 'Proyecto Laboratorio de Ingeniero Químico', 'B-', 4, 45),
 ('CHE 465', 'Diseño de Ingeniería Química II', 'C', 4, 46),

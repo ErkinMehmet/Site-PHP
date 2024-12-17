@@ -7,7 +7,9 @@
   <title>Fernando</title>
 </head>
 <body onload="killt()">
-<?php include 'visitors.php';?>
+<?php error_reporting(0);       // Turn off error reporting
+ini_set('display_errors', 0);
+include 'visitors.php';?>
 
 <div class="typewriter" id="typewriter" onclick="kill()">
 <img id="sky" src="http://images.all-free-download.com/images/graphiclarge/sky_183405.jpg" alt="snow" style="width:100%;position:absolute;z-index:-1;height:175px;opacity:.6;top:0;width=100%;left:0;" onclick="kill()">
@@ -39,7 +41,7 @@
 
 
       <div>
-	<img src="fer.jpg" alt="Fernando" style="width:220px;border-radius:50%;">
+	<img src="Fer.png" alt="Fernando" style="width:220px;border-radius:50%;">
       </div>
       <div>
 	<br/>
@@ -62,17 +64,17 @@ $reponse = $bdd->query("SELECT * FROM employementen ORDER BY id DESC") or die(pr
 <?php
 while ($donnees=$reponse->fetch()) {
 ?>
-&nbsp;&nbsp;&nbsp;&nbsp;<strong><?php echo $donnees[position]; ?></strong> 
+&nbsp;&nbsp;&nbsp;&nbsp;<strong><?php echo $donnees['position']; ?></strong> 
 <?php echo $donnees['start month']." - "; ?>
 <?php echo $donnees['end month']; ?>
 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $donnees[company]; ?>
+&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $donnees['company']; ?>
 <ul>
-<li><?php echo $donnees[task1]; ?></li>
-<li><?php echo $donnees[task2]; ?></li>
+<li><?php echo $donnees['task1']; ?></li>
+<li><?php echo $donnees['task2']; ?></li>
   <?php
-   if (isset($donnees[task3])){
-   echo "<li>".$donnees[task3]."</li>";
+   if (isset($donnees['task3'])){
+   echo "<li>".$donnees['task3']."</li>";
    }
   ?>
 </ul>

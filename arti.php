@@ -9,6 +9,8 @@
 <?php include('conexion.php'); ?>
 
 <?php
+error_reporting(0);       // Turn off error reporting
+ini_set('display_errors', 0);
 //print_r($_GET);
 //si l n y a pas de valeurs par get on donne le sommaire sinon on donne un article si le numero
 //n est pas trouve on donne une page d erreur

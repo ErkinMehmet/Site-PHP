@@ -6,7 +6,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Self presentation</title>
 </head>
-<body onload="killt()">
+<body onload="killt()"> <?php error_reporting(0);       // Turn off error reporting
+ini_set('display_errors', 0);
+?>
 <?php include 'visitors.php';?>
 
 <div class="typewriter" id="typewriter" onclick="kill()">

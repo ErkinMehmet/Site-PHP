@@ -12,7 +12,9 @@
 <h1 id="texto">Welcome to Fernando's personal space!
 </h1>
 </div>
-
+<?php error_reporting(0);       // Turn off error reporting
+ini_set('display_errors', 0);
+?>
 <div  class="menu" id="menu" onclick="ope()" onmouseover="veil()" onmouseout="unveil()">
   <p class="navmes" id="navmes">cliquez ici</p>
   <ul class="nav" id="nav">
@@ -36,7 +38,7 @@
   <div class="flip">
     <div class="inner">
       <div class="front">
-	<img src="fer.jpg" alt="Fernando" style="width:220px;border-radius:50%;">
+	<img src="Fer.png" alt="Fernando" style="width:220px;border-radius:50%;background-color:transparent;">
       </div>
       <div class="back">
 	<br/>

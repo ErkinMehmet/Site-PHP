@@ -10,17 +10,17 @@ $reponse = $bdd->query("SELECT * FROM historiadeempleo") or die(print_r($bdd->er
 <?php
 while ($donnees=$reponse->fetch()) {
 ?>
-&nbsp;&nbsp;&nbsp;&nbsp;<strong><?php echo $donnees[posicion]; ?></strong> 
+&nbsp;&nbsp;&nbsp;&nbsp;<strong><?php echo $donnees['posicion']; ?></strong> 
 <?php echo $donnees['inicio mes']." - "; ?>
 <?php echo $donnees['fin mes']; ?>
 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $donnees[empresa]; ?>
+&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $donnees['empresa']; ?>
 <ul>
-<li><?php echo $donnees[deber1]; ?></li>
-<li><?php echo $donnees[deber2]; ?></li>
+<li><?php echo $donnees['deber1']; ?></li>
+<li><?php echo $donnees['deber2']; ?></li>
   <?php
-   if (isset($donnees[deber3])){
-   echo "<li>".$donnees[deber3]."</li>";
+   if (isset($donnees['deber3'])){
+   echo "<li>".$donnees['deber3']."</li>";
    }
   ?>
 </ul>

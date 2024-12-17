@@ -10,10 +10,13 @@
 <?php include('conexion.php'); ?>
 
 <?php
+error_reporting(0);       // Turn off error reporting
+ini_set('display_errors', 0);
 //inserer le commentaire
-if ($_POST['commentaire']!="") {
+$comm=$_POST['commentaire'];
+if ($comm!="") {
 	//print_r($_POST);
-if (strlen($_POST['commentaire'])>5)
+if (strlen($comm)>5)
 {
 	//s assure que c est le meme commentaire que le dernier
 	$quer="select * from commentaire ORDER BY id DESC LIMIT 1";
@@ -39,7 +42,7 @@ if (strlen($_POST['commentaire'])>5)
 	}
 
 	$quer.="\"".$_POST['cel']."\",";
-	$quer.="\"".$_SERVER['HTTP_USER_AGENT'].$_SERVEUR['REMOTE_ADDR ']."\"";
+	$quer.="\"".$_SERVER['HTTP_USER_AGENT'].$_SERVER['REMOTE_ADDR ']."\"";
 	$quer=$quer.",\"".$_POST['ppays']."\")";
 	//echo $quer;
 	//echo $commechape;
@@ -61,7 +64,6 @@ if (strlen($_POST['commentaire'])>5)
 
 <div id="saisie">
 <div id="panel">
-
 <div class="countries" id="countries">
 	<h4>All Countries</h4>
 <?php
@@ -71,7 +73,7 @@ $files=scandir($repertoire);
 //print_r($files);
 $emojinum=0;
 foreach ($files as $file) {
-	if ($file<>"." and $file<>".."  and strlen($file.basename)==14 and strpos($file.basename,'.png')) {
+	if ($file<>"." and $file<>".." && strpos($file, '.png') !== false) {
 		$emojinum+=1;
 		echo "<img src=\"drapeaux/".$file."\" width=\"30\" onclick=\"addcountry(this)\">";
 		if ($emojinum % 25 ==0) {

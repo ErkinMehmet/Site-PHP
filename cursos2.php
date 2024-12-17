@@ -19,7 +19,7 @@ $reponse = $bdd->query("SELECT * FROM cursos") or die(print_r($bdd->errorInfo())
 <?php
 while ($donnees=$reponse->fetch()) {
 ?>
-<tr><td><?php echo $donnees[annee] ?></td><td><?php echo $donnees[cours] ?></td><td><?php echo $donnees[description] ?></td><td><?php echo $donnees[note]  ?></td></tr>
+<tr><td><?php echo $donnees['annee'] ?></td><td><?php echo $donnees['cours'] ?></td><td><?php echo $donnees['description'] ?></td><td><?php echo $donnees['note']  ?></td></tr>
 <?php
 }
 $reponse->closeCursor(); // Termine le traitement de la requête

@@ -10,17 +10,17 @@ $reponse = $bdd->query("SELECT * FROM employementfr") or die(print_r($bdd->error
 <?php
 while ($donnees=$reponse->fetch()) {
 ?>
-&nbsp;&nbsp;&nbsp;&nbsp;<strong><?php echo $donnees[position]; ?></strong> 
+&nbsp;&nbsp;&nbsp;&nbsp;<strong><?php echo $donnees['position']; ?></strong> 
 <?php echo $donnees['start month']." - "; ?>
 <?php echo $donnees['end month']; ?>
 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $donnees[company]; ?>
+&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $donnees['company']; ?>
 <ul>
-<li><?php echo $donnees[task1]; ?></li>
-<li><?php echo $donnees[task2]; ?></li>
+<li><?php echo $donnees['task1']; ?></li>
+<li><?php echo $donnees['task2']; ?></li>
   <?php
-   if (isset($donnees[task3])){
-   echo "<li>".$donnees[task3]."</li>";
+   if (isset($donnees['task3'])){
+   echo "<li>".$donnees['task3']."</li>";
    }
   ?>
 </ul>

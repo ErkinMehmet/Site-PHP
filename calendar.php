@@ -15,7 +15,7 @@ $day=date("d");
 
 $input = $month."/01/".$year;
 $firstdate = strtotime($input); 
-$wdname=date($firstdate,"l");
+$wdname=date("l",$firstdate);
 
 
 
