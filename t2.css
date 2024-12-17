@@ -1,0 +1,43 @@
+
+.outside {
+      background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://photogrist.com/wp-content/uploads/2016/08/Lago-di-Braies.jpg");
+      position:absolute;
+      width:100%;
+      height:100%;
+}
+
+.container {
+border-radius:10px;
+padding:5px;
+font-size:26px;
+background-image:linear-gradient(to right bottom,#E0FFFF,#7FFFD4);
+text-align:center;
+margin-top:5%;
+height:50%;
+margin-left:25%;
+	width:50%;
+      border:3px solid #000000; 
+}
+
+.container label {
+      padding:20px;
+      font-weight:bold;
+      font-family:Comic Sans MS;
+}
+
+.champ {
+       margin-left:25%;
+       width:50%;
+       display:block;
+       padding:10px;
+       font-size:24px;
+       border-radius:10px;
+}
+
+.btn {
+     margin-top:20px;
+     font-size:22px;
+     width:40%;
+     margin-left:0%;
+}
+

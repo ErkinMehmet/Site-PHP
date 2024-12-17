@@ -1,0 +1,43 @@
+<doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="form.css">
+  <title>Page de connexion</title>
+</head>
+<body style="font-style:20px;">
+  <h1 style="font-style:20px;">Veuillez saisir votre code et votre nom d'utilisateur</h1>
+  <form method="post" action="project2.php">
+    <p>
+      <label for="telefonoentrada">Cellulaire: </label>
+      <input type="text" name="telefonoentrada" id="telefonoentrada" size="30"/>
+    </p>
+    <p>
+      <label for="codigoentrada">Mot de passe: </label>
+      <input type="text" name="codigoentrada" id="codigoentrada" size="30" onmouseover="explicar()" onmouseout="salir()"/>
+    </p>
+    <p>
+      <input type="submit" value="Entrar" id="envoyer" name="envoyer"/>
+    </p>
+    <p>
+      <tr>
+	<td>
+      <a id="crear" href="form.html">Créer votre compte</a>
+      </td><td></p><p><a id="crear" href="form2.html">Changer de coordonnées</a>
+      </td></tr>
+    </p>
+  </form>
+  <div id="expli">
+  </div>
+  <script>
+    function explicar(){
+    var pagina=document.getElementById("expli");
+    pagina.innerHTML+="<h2>Bonjour j'attends que vous saissiez le mot de passe</h2>"
+    }
+    function salir(){
+    var pagina=document.getElementById("expli");
+    pagina.innerHTML="";
+    }
+  </script>
+</body>
+</html>

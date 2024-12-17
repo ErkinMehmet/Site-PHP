@@ -1,0 +1,1017 @@
+@import url(https://fonts.googleapis.com/css?family=Cabin:400);
+
+body,
+html {
+    height:100%;
+    margin:0;
+    word-wrap:normal;
+}
+
+.maintitle {
+    font-size:36px;
+    padding:20px;
+}
+
+.header {
+    padding:10px 16px;
+    background:rgb(85,81,81);
+    color:#f1f1f1;
+    overflow:auto;
+    margin:0;
+    z-index:10;
+}
+
+.header a {
+    float:left;
+    color:#f2f2f2;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+    font-size:17px;
+    transition:background-color 0.8s, color 0.8s;
+}
+
+.header a:hover {
+    background-color:rgb(255,246,246);
+    color:rgb(0,0,0);
+    text-decoration: none;
+}
+
+.header a.active {
+    background-color:rgb(34,79,146);
+    color:white;
+}
+
+.content {
+    padding:0;
+}
+
+.sticky {
+    position:fixed;
+    top:0;
+    width:100%;
+}
+
+.msgbox {
+    position:fixed;
+    bottom:5px;
+    right:10;
+    background:rgb(92, 91, 91);
+    cursor:pointer;
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    border-radius:50%;
+    overflow:hidden;
+    height:90px;
+    padding:10px;
+}
+
+.msgbox:hover{
+    opacity:0.7;
+}
+
+.contactinfo {
+    position:fixed;
+    bottom:100px;
+    width:23%;
+    right:10;
+    background:black;
+    cursor:pointer;
+    text-align:center;
+    color:white;
+    font-weight:bold;
+    overflow:hidden;
+    height:320px;
+    transition: height 0.5s;
+    transition-timing-function: ease-out;
+
+}
+
+.infohidden {
+    height:0;
+}
+
+.individual {
+    display:table;
+    height:40;
+    width:100%;
+    position:relative;
+    bottom:0;
+}
+
+.indpic {
+    display:table-cell;
+    width:23%;
+    padding:0;
+}
+
+.indpic img {
+    position:relative;
+    bottom:3px;
+}
+
+.indiinfo {
+    display:table-cell;
+    width:77%;
+    font-size:14px;
+    padding:20px;
+    vertical-align:center;
+}
+
+.indinom {
+    position:relative;
+    bottom:18px;
+}
+
+.indidetail {
+    position:relative;
+    bottom:13px;
+}
+
+.indidetail a {
+    text-decoration:none;
+}
+
+.individual {
+    border:2px solid black;
+}
+
+.indpic {
+    border-right:2px solid black;
+}
+
+/*asp*/
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-image:linear-gradient(180 deg,rgba(200,200,200,1), rgba(255,200,200,0));
+    width: 30%;
+    height: 500px;
+  }
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 20px;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current "tab button" class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 500px;
+  }
+
+.background1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("b1.jpg");;
+    height: 100%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+        color: white;
+      
+}
+
+.background1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("b1.jpg");;
+    height: 100%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+        color: white;
+      
+}
+.background2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("b2.jpg");;
+    height: 100%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+        color: white;
+      
+}
+.background3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("b3.jpg");;
+    height: 100%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+        color: white;
+      
+}
+.background4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("b4.jpg");;
+    height: 100%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+        color: white;
+      
+}
+.background5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("b5.jpg");;
+    height: 100%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+        color: white;
+}
+.background9 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("b9.jpg");;
+    height: 100%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+        color: white;
+}
+.background13 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("b13.jpg");;
+    height: auto;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+        color: white;
+    
+}
+
+
+
+
+
+
+
+/* comm
+*/
+#saisie,#panel,#boitedesaisie,#panel2 {
+    padding:16px;
+    text-align:left;
+}
+
+.comm {
+    font-size:18px;
+    margin:0;
+    padding:15px;
+}
+
+.commentboxx {
+    border-style:solid;
+}
+.commodd {
+    background-color:whitesmoke;
+}
+
+.commeven {
+    background-color:lightgray;
+}
+
+#countries {
+    display:none;
+}
+.lignecomm {
+    display:table;
+    width:100%;
+    margin:0;
+    height:auto;
+}
+
+.commentboxl {
+    display:table-cell;
+    width:10%;
+}
+
+.centerimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.commentboxr {
+    display:table-cell;
+    width:90%;
+    border-color: #393;
+}
+
+.commentboxr:focus {
+	animation: glow 800ms ease-out infinite alternate;
+	background: #222922;
+	background: linear-gradient(#333933, #222922);
+	border-color: #393;
+	box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
+	color: #efe;
+	outline: none;
+}
+
+
+
+/* fin comm
+*/
+
+
+
+/*
+arti
+*/
+
+.articuloenlace {
+    text-decoration:none;
+    padding:30px;
+    color:black;
+    font-size:26px;
+}
+
+
+.articuloenlace:hover, .abstracto:hover {
+    text-decoration:underline;
+}
+
+.abstracto {
+    padding:25px;
+    position:relative;
+    left:50px;
+}
+
+.errorcontainer {
+    height:500px;
+}
+
+.articulo {
+    padding:25px;
+}
+
+
+
+/*
+fin
+
+arti
+*/
+.ligne {
+    display:table;
+    width:100%;
+    margin:0;
+    height:auto;
+}
+
+.gauche {
+    display:table-cell;
+    width:30%;
+}
+
+.centre {
+    display:table-cell;
+    width:50%;
+}
+
+.droite {
+    display:table-cell;
+    width:20%;
+}
+.centre30 {
+    display:table-cell;
+    width:30%;
+}
+.droite30 {
+    display:table-cell;
+    width:30%;
+}
+
+.droite60 {
+    display:table-cell;
+    width:60%;
+}
+.gauche40 {
+    display:table-cell;
+    width:40%;
+}
+
+.droite70 {
+    display:table-cell;
+    width:70%;
+}
+.gauche30 {
+    display:table-cell;
+    width:30%;
+}
+.gauche, .droite {
+    background:lightgray;
+    margin:0;
+    padding:16px;
+}
+
+.centre {
+    background:whitesmoke;
+    padding:16px;
+}
+
+.pie {
+    width:100%;
+    background:black;
+    color:whitesmoke;
+    padding:15px;
+
+}
+
+.introme p {
+    padding:16px;
+}
+
+.intropie {
+    width:50%;
+}
+.intropie p {
+    padding:15px;
+    margin:5px;
+}
+
+.pieliss {
+    list-style-type:none;
+}
+
+.pieliss li {
+    padding:20px;
+}
+.pieliss li a {
+    text-decoration:none;
+    color:whitesmoke;
+    padding:20px;
+}
+
+.piecont {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+}
+
+.pietit {
+    padding:16px 60px;
+}
+
+.pieliss li:hover {
+    font-weight:bold;
+    background-color:gray;
+
+}
+
+.picframe {
+    left:5%;
+    width:90%;
+    position:relative;
+}
+
+.droite ul{
+    list-style-type:none;
+}
+
+.gauchefoot {
+    width:40%;
+    cursor:-webkit-grab;
+    cursor:grab;
+}
+
+/*rendez vous*/
+.timelinediv {
+    box-sizing: border-box;
+    background-color: #474e5d;
+    font-family: Helvetica, sans-serif;
+  }
+
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .tlcontainer {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .tlcontainer::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .tlleft {
+    left: 0;
+  }
+  
+  /* Place the container to the right */
+  .tlright {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .tlleft::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .tlright::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .tlright::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .tlcontent {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    width:40%;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+    .timeline::after {
+      left: 31px;
+    }
+  
+  /* Full-width containers */
+    .tlcontainer {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+  /* Make sure that all arrows are pointing leftwards */
+    .tlcontainer::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+  /* Make sure all circles are at the same spot */
+    .tlleft::after, .tlright::after {
+      left: 15px;
+    }
+  
+  /* Make all right containers behave like the left ones */
+    .tlright {
+      left: 0%;
+    }
+  }
+
+  /*section calendar*/
+
+section.calendar {
+	background-color: #29323f;
+
+	font-family: 'Dosis', sans-serif;
+	color: #fff;
+	width: 100%;
+	padding: 50px;
+	transform: translateY(-0%) translateX(-%);
+	box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.6);
+	border-radius: 5px;
+}
+
+section.calendar h1 {
+	text-align: center;
+	color: #fcee6d;
+	margin: 0 0 30px 0;
+}
+
+section.calendar form {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+
+section.calendar form label.weekday {
+	display: inline-block;
+	width: 25px;
+	margin: 8px;
+	text-align: center;
+	color: #999;
+}
+
+section.calendar form form {
+	margin: 0;
+	padding: 0;
+}
+
+section.calendar form label.day {
+	display: inline-block;
+	width: 25px;
+	margin: 8px;
+}
+
+section.calendar form label.day span {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	margin: -2px 0 0 -2px;
+	border-radius: 50%;
+	border: 2px solid #29323f;
+	text-align: center;
+	transition: all .2s linear;
+	cursor: pointer;
+}
+
+section.calendar form label.day span:hover {
+	border-color: #e7d84f;
+}
+
+section.calendar form label.day em {
+	display: inline-block;
+	position: absolute;
+	border-radius: 50%;
+	border-color: #29323f;
+	width: 3px;
+	height: 3px;
+	background-color: #685e02;
+	margin-left: 11px;
+	margin-top: 2px;
+	opacity: 0;
+	transition: all .2s linear;
+}
+
+section.calendar form label.day input[type=text] {
+	border: 0;
+	opacity: 0;
+	position: relative;
+	margin-top: 40px;
+	left: 5px;
+	width: 300px;
+	height: 1px;
+	padding: 0;
+	outline: none;
+	font-size: 16px;
+	transition: height .2s linear, opacity .2s linear, color .02s linear;
+	color: #fff;
+}
+
+section.calendar form label.day input[type=text]:focus {
+	opacity: 1;
+	height: 35px;
+	padding: 10px 40px;
+	left: 5px;
+	width: 300px;
+	color: #29323f;
+}
+
+section.calendar form label.day input[type=text]:focus + span {
+	color: #fcee6d;
+	border-color: #fcee6d;
+	background: #fcee6d;
+	color: #29323f;
+	font-weight: bold;
+	margin-bottom: 65px;
+}
+
+section.calendar form label.day input[type=text]:focus ~ em {
+	border-radius: 0;
+	border: 5px solid transparent;
+	background: transparent;
+	border-bottom-color: white;
+	margin-top: -62px;
+	margin-left: 7px;
+	width: 0;
+	height: 0;
+	display: inline-block;
+	opacity: 1;
+}
+
+section.calendar form label.day input[type=text]:valid ~ em {
+	display: inline-block;
+	opacity: 1;
+}
+
+section.calendar form label.day.invalid {
+	opacity: 0;
+	width: 25px;
+	height: 25px;
+}
+
+section.calendar form label.day.invalid span, section.calendar form label.day.invalid input {
+	display: none;
+}
+
+section.calendar div.clearfix {
+	clear: both;
+}
+
+section.calendar div.hidden {
+	display: none;
+}
+
+/*contact*/
+.ctcard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .cttitle {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  .ctcard button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .ctcard a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  .ctcard button:hover, .ctcard a:hover {
+    opacity: 0.7;
+  }
+
+  /*cahtbotlotin*/
+
+
+/* style the container */
+.chatbotlogin .ctcontainer {
+  position: relative;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+} 
+
+/* style inputs and link buttons */
+.chatbotlogin input,
+.chatbotlogin .btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+.chatbotlogin input:hover,
+.chatbotlogin .btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.chatbotlogin .fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.chatbotlogin .twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.chatbotlogin .google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+/* style the submit button */
+.chatbotlogin input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+.chatbotlogin input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Two-column layout */
+.chatbotlogin .col {
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.chatbotlogin .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line */
+.chatbotlogin .vl {
+  position: relative;
+  left:50%;
+border-radius:50%;
+  border: 5px solid #ddd;
+  height: 175px;
+}
+
+/* text inside the vertical line */
+.chatbotlogin .inner {
+  position: relative;
+  top: 50%;
+
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+/* hide some text on medium and large screens */
+.chatbotlogin .hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.chatbotlogin .bottom-container {
+  text-align: center;
+  background-color: #666;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+    .chatbotlogin .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* hide the vertical line */
+  .chatbotlogin .vl {
+    display: none;
+  }
+  /* show the hidden text on small screens */
+  .chatbotlogin .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
+
+select {
+  width:100%;
+  font-size:30px;
+}
+
+/*chat*/
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.cardcontainer {
+  padding: 2px 16px;
+}
+/*modal*/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin:80px;
+  top:0;
+  left:0;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.mdclose {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.mdclose:hover,
+.mdclose:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

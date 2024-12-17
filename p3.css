@@ -1,0 +1,381 @@
+body,
+html {
+    height:100%;
+    margin:0;
+    word-wrap:normal;
+}
+
+.maintitle {
+    font-size:36px;
+    padding:20px;
+}
+
+.header {
+    padding:10px 16px;
+    background:rgb(85,81,81);
+    color:#f1f1f1;
+    overflow:auto;
+    margin:0;
+    z-index:10;
+}
+
+.header a {
+    float:left;
+    color:#f2f2f2;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+    font-size:17px;
+    transition:background-color 0.8s, color 0.8s;
+}
+
+.header a:hover {
+    background-color:rgb(255,246,246);
+    color:rgb(0,0,0);
+    text-decoration: none;
+}
+
+.header a.active {
+    background-color:rgb(34,79,146);
+    color:white;
+}
+
+.loginfo {
+    padding:5px 30px 5px 30px;
+    background-color:lightgoldenrodyellow;
+    font-weight:bold;
+}
+
+.content {
+    padding:0;
+}
+
+.sticky {
+    position:fixed;
+    top:0;
+    width:100%;
+}
+
+.msgbox {
+    position:fixed;
+    bottom:0;
+    width:25%;
+    right:10;
+    background:#98AFC7;
+    cursor:pointer;
+    text-align:center;
+    color:black;
+    font-weight:bold;
+    height:50;
+}
+
+.msgbox:hover{
+    opacity:0.7;
+}
+
+.contactinfo {
+    position:fixed;
+    bottom:50;
+    width:25%;
+    right:10;
+    background:#98AFC7;
+    cursor:pointer;
+    text-align:center;
+    color:black;
+    font-weight:bold;
+    overflow:hidden;
+    height:auto;
+}
+
+.infohidden {
+    height:0;
+}
+
+.individual {
+    display:table;
+    height:40;
+    width:100%;
+    position:relative;
+    bottom:0;
+}
+
+.indpic {
+    display:table-cell;
+    width:23%;
+    padding:0;
+}
+
+.indpic img {
+    position:relative;
+    bottom:-13px;
+
+}
+
+.indiinfo {
+    display:table-cell;
+    width:77%;
+    font-size:14px;
+    padding:0;
+}
+
+.indinom {
+    position:relative;
+    bottom:18px;
+}
+
+.indidetail {
+    position:relative;
+    bottom:13px;
+}
+
+.indidetail a {
+    text-decoration:none;
+}
+
+.individual {
+    border:2px solid black;
+}
+
+.indpic {
+    border-right:2px solid black;
+}
+
+.commentbox {
+    border:2px solid grey;
+}
+
+.alert {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 350ms ease-in-out, opacity 750ms ease-in-out;
+}
+
+.ess {
+    transition: height 350ms ease-in-out, opacity 750ms ease-in-out;
+}
+
+button, .btngp {
+    width:100%;
+}
+
+.btngp {
+
+    height:1000px;
+}
+
+.fenetretitulo {
+    width:100%;
+
+}
+
+.fenetretitulot {
+    padding:15;
+    position:relative;
+}
+
+.fenetretitulob {
+    position:relative;
+    right:0;
+
+
+    width:30%;
+}
+
+.buttitulo{
+    margin:20px;
+    width:90%;
+    position:relative;
+}
+
+.butsub, .butmen  {
+    margin:20px 30px 20px 30px;
+    width:80%;
+}
+
+.fenetre {
+    padding:0;
+
+}
+/* comm
+*/
+#saisie,#panel,#boitedesaisie,#panel2 {
+    padding:16px;
+    text-align:left;
+}
+
+.comm {
+    font-size:18px;
+    margin:0;
+    padding:15px;
+}
+
+.commodd {
+    background-color:whitesmoke;
+}
+
+.commeven {
+    background-color:lightgray;
+}
+
+#countries {
+    display:none;
+}
+/* fin comm
+*/
+
+
+
+/*
+arti
+*/
+
+.articuloenlace {
+    text-decoration:none;
+    padding:30px;
+    color:black;
+    font-size:26px;
+}
+
+
+.articuloenlace:hover, .abstracto:hover {
+    text-decoration:underline;
+}
+
+.abstracto {
+    padding:25px;
+    position:relative;
+    left:50px;
+}
+
+.errorcontainer {
+    height:500px;
+}
+
+.articulo {
+    padding:25px;
+}
+
+
+
+/*
+fin
+
+arti
+*/
+.ligne {
+    display:table;
+    width:100%;
+    margin:0;
+    height:auto;
+}
+
+.gauche {
+    display:table-cell;
+    width:20%;
+}
+
+.gauche2 {
+    display:table-cell;
+    width:15%;
+}
+
+
+.centre {
+    display:table-cell;
+    width:60%;
+}
+
+.centre2 {
+    display:table-cell;
+    width:65%;
+}
+
+.ejerrow {
+    padding:3;
+}
+
+.ejer {
+    padding:1;
+    width:100%;
+}
+
+
+.droite {
+    display:table-cell;
+    width:20%;
+}
+.droite2 {
+    display:table-cell;
+    width:15%;
+}
+
+.gauche, .droite {
+    background:lightgray;
+    margin:0;
+    padding:16px;
+}
+
+.centre {
+    background:whitesmoke;
+    padding:16px;
+}
+
+.pie {
+    width:100%;
+    background:black;
+    color:whitesmoke;
+    padding:15px;
+
+}
+
+.introme p {
+    padding:16px;
+}
+
+.intropie {
+    width:50%;
+}
+.intropie p {
+    padding:15px;
+    margin:5px;
+}
+
+.pieliss {
+    list-style-type:none;
+}
+
+.pieliss li {
+    padding:20px;
+}
+.pieliss li a {
+    text-decoration:none;
+    color:whitesmoke;
+    padding:20px;
+}
+
+.piecont {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+}
+
+.pietit {
+    padding:16px 60px;
+}
+
+.pieliss li:hover {
+    font-weight:bold;
+    background-color:gray;
+
+}
+
+.picframe {
+    left:5%;
+    width:90%;
+    position:relative;
+}
+
+.droite ul{
+    list-style-type:none;
+}
+

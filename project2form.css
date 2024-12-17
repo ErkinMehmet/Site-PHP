@@ -1,0 +1,74 @@
+body {
+     font-family:"Comic Sans MS";
+     font-size:20px;
+     background-color:#E0FFFF;
+     color:#111;
+}
+h1 {
+   font-height:bold;
+   font-size:20px;
+   color:darkblue;
+   text-align:center;
+   background-color:#9ACD32;
+   padding:16px;
+}
+form {
+     font-size:26px;
+     width:800px;
+}
+form span.fomrField{
+     width:inherit;
+     display:inline-block;
+     margin:5px 0;
+}
+form label {
+     font-size:26px;
+     float:left;
+     width:400px;
+     text-align:right;
+     padding:6px;
+     font-weight:bold;
+}
+#codigoentrada,#telefonoentrada {
+     padding:6px;
+     margin-left:20px;
+     background-color:B0E0E6;
+     border-style:groove;
+     border-width:5px;
+     border-color:#444;
+     border-radius:10px;
+}
+
+#buton {
+       padding:6px;
+       margin-left:400px;
+       background-color:#9ACD32;
+       border-width:6px;
+       border-color:#9ACD32;
+       border-radius:10px;
+     border-color:#555;
+     font-size:70%;
+}
+#crear {
+       padding:6px;
+       margin-left:400px;
+       background-color:#9ACD32;
+       border-width:6px;
+       border-color:#9ACD32;
+       border-radius:10px;
+     border-color:#555;
+     font-size:40%;
+}
+
+
+#expli {
+     padding:0px;
+     margin-left:20px;
+     background-color:#DDA0DD;
+     border-style:groove;
+     border-width:0px;
+     border-color:#444;
+     border-radius:10px;
+     font-size:90%;
+}
+

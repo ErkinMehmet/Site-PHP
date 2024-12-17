@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="form.css">
+  <title>Page de l'Inscription</title>
+</head>
+<body>
+  <h1>Veuillez entrer vos coordonnees et vos mots de passe désirés</h1>
+  <form method="post" action="reception.php">
+    <p>
+      <label for="nomEmploye">Nom</label>
+      <input type="text" name="nom" id="nomEmploye" size="30"/>
+    </p>
+    <p>
+      <label for="prenomEmploye">prénom</label>
+      <input type="text" name="prenom" id="prenomEmploye" size="30"/><br/>
+    </p>
+    <p>
+      <label for="telephone">Cellulaire</label>
+      <input type="text" name="telephone" id="telephone" size="15"/><br/>
+    </p>
+    <p>
+      <label for="email">E-mail</label>
+      <input type="text" name="email" id="email" size"20"/><br/>
+    </p>
+    <p>
+      <label for="categorie">Profession</label>
+      <select name="categorie" id="categorie" pattern="(secretaire)/(commercial)/(technique)/(boss)/(autres)" onchange='categoriechange();'>
+	<option value="choisissez" selected disabled>--choisissez--</option>
+	<option value="secretaire">Secretaire</option>
+	<option value="commercial">Commercial</option>
+	<option value="technique">Technique</option>
+	<option value="autres">Autres</option>
+	<option value="boss"/>Boss</option>
+     </select>
+    <div id="ajout">
+    </div>
+    </p
+    <p>
+      <label for="mdp">Mots de passe</label>
+      <input type="text" id="mdp" name="mdp"></input>
+    </p>
+    <p>
+      <label for="mdp2">Veuillez confirmer vos mots de passe</label>
+      <input type="text" name="mdp2" id="mdp2"></input>
+    </p>
+    <p>
+      <input type="submit" name="envoyer" id="envoyer" value="envoyer"></input>
+    </p>
+    <p>
+      <a href=project2form.html>Retourer à la page</a>
+    </p>  
+</form>
+
+<script>
+  function categoriechange(){
+  var para=document.getElementById("ajout");
+  if (document.getElementById("categorie").value=="boss"){
+    para.innerHTML+='<label>Vous êtes:</label><select name="patron" id="patron">'
+    +'<option value="Yohann">Yohann</option>'
+    +'<option value="Fernando">Fernando</option>'
+    +'</select>';
+    } else {
+    para.innerHTML="";
+    }
+  }
+
+  categoriechange();
+</script>
+
+</body>
+</html>
+
+
+

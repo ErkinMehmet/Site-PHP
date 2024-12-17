@@ -1,0 +1,126 @@
+<doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="projecta.css">
+  <title>Fernando H. Li Rodríguez Sanchez</title>
+</head>
+<body>
+  <ul id="menu">
+    <li id="primer">
+      <a href="">Introducción</a>
+      <ul>
+	<li><a onclick="informacion()">Información</a></li>
+	<li><a onclick="interes()">Interés</a></li>
+	<li><a onclick="planfuturo()">Plan futuro</a></li>
+      </ul>
+    </li>
+    <li id="primer">
+      <a href="">Educación</a>
+      <ul>
+	<li><a onclick="diplomas()">Diplomas</a></li>
+	<li><a onclick="cursos()">Cursos</a></li>
+	<li><a onclick="premios()">Premios</a></li>
+	<li><a href="">Proyectos</a></li>
+	<li><a href="">Trabajo aprenti</a></li>
+      </ul>
+    </li>
+    <li id="primer">
+      <a href="">Experencia Profesional</a>
+      <ul>
+	<li><a href="historiadeempleo.html">Historia de empleo</a></li>
+	<li><a href="">Experencia voluntaria</a></li>
+      </ul>
+    </li>
+    <li id="primer">
+      <a href="">Aptitudes</a>
+      <ul>
+	<li><a onclick="programacion()">Programacion</a></li>
+	<li><a onclick="idiomas()">Idiomas</a></li>
+	<li><a href="">Otras aptitudes</a></li>
+      </ul>
+    </li>
+    <li id="primer">
+      <a href="">Contacto</a>
+      <ul>
+	<li><a onclick="mesajes()">Mesajes</a></li>
+	<li ><a onclick="contactame()">Contactárme</a></li>
+      </ul>
+    </li>
+    <li id="primer">
+      <a href="">Enlaces Asociadas</a>
+      <ul>
+	<li><a href="">Página de ventas</a></li>
+	<li><a href="project2form.html">Espacio secreto</a></li>
+	<li><a href="">Control de prepuestos</a></li>
+	<li><a href="">Recordatorio</a></li>
+      </ul>
+    </li>
+  </ul>
+  <h1 id="titulo">Bienvenido a la página de Fernando</h1>
+  <div id="centro">
+  </div>
+  
+  <script>
+    function interes(){
+    var para=document.getElementById("centro");
+    para.innerHTML='<h1>Vea abajo mis interés</h1>';
+    para.innerHTML+='';
+    }
+    function planfuturo(){
+    var para=document.getElementById("centro");
+    para.innerHTML='<h1>Vea abajo mis interés</h1>';
+    para.innerHTML+='';
+    }
+
+    function diplomas(){
+    var para=document.getElementById("centro");
+    para.innerHTML='<h1>B.Sc., Ingeniero Químico</h1><br/>';
+    para.innerHTML+='<p><strong>Universidad de Alberta</strong>, Edmonton AB</p>';
+    para.innerHTML+='<ul style="list-style-type:none;margin:10px;"><li><strong>Nota media</strong>: 3.5/4 con distincíon</li><li><strong>Cursos pertinentes</strong>: Control de Proceso, Securidad en Laboratorio y Administración de Proyectos</li><li><strong>Proyectos</strong>: floculación de residuo de betún, optimización de programas en física cuantíca, simulación de chromatografía, conversión de residuos sólidos en gas natural y producción de gas natural licuado</li></ul>';
+    }
+
+    function cursos(){
+    var para=document.getElementById("centro");
+    para.innerHTML='<h1></h1>'
+    }
+
+    function premios(){
+    var para=document.getElementById("centro");
+    para.innerHTML='<h1>Abajo son los premios que recibí</h1>';
+    para.innerHTML+='<ul><li>Jacobs/japex Premio en Ingeniero, 2017</li><li>Becas Pregrado de Investigación para el Instituto Canadiense de Física Nulear, 2017</li><li>Premio Decano de Investigación, 2017</li>DB Robison Becas de Entrada en Ingeniero Químico, 2015<li>Citación de Suncor Energía Lider Pregrado por el Decano</li><li>Becas de Chen Pang-Quen, cada semestre entre 2014-2018</li></ul>';
+    }
+
+
+    function programacion(){
+    var para=document.getElementById("centro");
+    para.innerHTML='<h1>Mis habilidades en programmación</h1>';
+    para.innerHTML+='<h1>Mis habilidades en dasarrollo web</h1>'
+    para.innerHTML+='<table><tr><td>Lenguajes</td><td>Nivel</td><td>Descripción</td></tr><tr><td>HTML</td><td>Experto</td><td></td></tr><tr><td>Javascript</td><td>Avanzado</td><td></td></tr><tr><td>PHP</td><td>Avanzado</td><td></td></tr><tr><table>';
+    para.innerHTML+='<h1>Base de datos y lenguajes para desarrollo aplicación</h1>'
+    para.innerHTML+='<table><tr><td>Lenguajes</td><td>Nivel</td><td>Descripción</td></tr><tr><td>Python</td><td>Avanzado</td><td></td></tr><tr><td>VBA</td><td>Avanzado</td><td></td></tr><tr><td>MySQL</td><td>Avanzado</td><td></td></tr><tr><table>';
+	  }
+
+    function idiomas(){
+    var para=document.getElementById("centro");
+    para.innerHTML='<h1>Las idiomas que yo hablo</h1>';
+    para.innerHTML+='<table><tr><td>Idioma</td><td>Escuchar</td><td>Hablar</td><td>Leer</td><td>Escribir</td></tr><tr><td><strong>Inglés</strong></td><td>Nativo</td><td>Nativo</td><td>Nativo</td><td>Nativo</td></tr><tr><td><strong>Chino</strong></td><td>Nativo</td><td>Nativo</td><td>Nativo</td><td>Nativo</td></tr><br/><tr><td><strong>Francés</strong></td><td>Avanzado</td><td>Avanzado</td><td>Nativo</td><td>Nativo</td></tr><tr><td><strong>Español</strong></td><td>Intermedio</td><td>Intermedio</td><td>Avanzado</td><td>Inermedio</td></tr><tr><td><strong>Japonés</strong></td><td>Avanzado</td><td>Avanzado</td><td>Nativo</td><td>Avanzado</td></tr></table>';
+    }
+
+    function contactame(){
+    var para=document.getElementById("centro");
+    para.innerHTML='<h1>Mi numero es 91201920</h1>';
+    para.innerHTML+='<h1 style="font-size:40px;">Mi nacionalidad es Mauriciano</h1>';
+    }
+
+
+    function mesajes(){
+    var para=document.getElementById("centro");
+    para.innerHTML='<h1>Énviame un mesaje en la caja en bajo</h1>';
+    para.innerHTML+='<form><p style="font-size:40px;"><label for="nombre" style:"font-size:40px;">Nombre: </label><input type="text" id="nombre" size:50></input></p><p style:"font-size:40px;"><label for="mesaje" id="test" style:"font-size:40px;">Mesaje: </label><textarea id="mensaje" rows="4" cols="40" style="border:solid 5px #000000;border-radius:10px;"></textarea></p><p><input type="submit""border:solid 5px #000000;border-radius:10px;font-size:40px;"></input></p></form>'
+    }
+  </script>
+
+</body>
+</html>
+

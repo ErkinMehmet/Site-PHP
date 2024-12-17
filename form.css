@@ -1,0 +1,29 @@
+h1 {
+   font-size:26px;
+   text-align:center;
+}
+
+body {
+     font-size:16px;
+     font-weight:bold;
+     background-color:#D6EAF8;
+}
+
+label {
+      margin-left:30%;
+}
+#envoyer {
+	 font-size:18px;
+	 margin-left:40%;
+}
+input {
+      border: 3px solid #000000;
+      border-radius:5px;
+}
+
+select {
+       font-size:16px;
+}
+a {
+  margin-left:40%;
+}

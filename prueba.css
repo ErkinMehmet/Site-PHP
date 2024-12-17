@@ -1,0 +1,29 @@
+.mainbk {
+	display:inline-block;
+	border:3px solid #000000;
+	vertical-align:top;
+	border-radius:100px;
+	padding:10px;
+}
+
+.lista {
+       background-color:#99CC00;
+       padding:6px;
+       display:inline-block;
+       border:5px solid #000000;
+       border-radius:20px;
+}
+
+.produit {
+	 vertical-align:top;
+	 display:inline-block;
+}
+
+.produitinfo {
+	     padding:2px;
+}
+
+p {
+  font-size:14px;
+  padding:1px;
+}

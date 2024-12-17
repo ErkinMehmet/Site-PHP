@@ -1,0 +1,13 @@
+Receta [
+<!ELEMENT Receta (Nombre, Description?, Ingredientes?,Instrucciones?)>
+<!ELEMENT Nombre (#PCDATA)>
+<!ELEMENT Descripcion(#PCDATA)>
+<!ELEMENT Ingredientes(Ingrediente*)>
+<!ELEMENT Ingrediente(Cantidad, Item)>
+<!ELEMENT Cantidad(#PCDATA)>
+<!ATTLIST Cantidad unidad CDATA #REQUIRED>
+<!ELEMENT Item (#PCDATA)>
+<!ATTLIST Item opcional CDATA "0" vegetariano CDATA "si">
+<!ELEMENT Instruciones (Paso)+>
+<!ELEMENT Paso((#PCDATA)>
+]

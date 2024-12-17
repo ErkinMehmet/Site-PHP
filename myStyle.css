@@ -1,0 +1,100 @@
+body {
+     font-family:"Comic Sans MS";
+     font-size:16pt;
+     background-color:#fff;
+     color:#111;
+}
+h1 {
+   font-height:bold;
+   font-size:50%;
+   color:blue;
+   text-align:center;
+   background-color:#999;
+   padding:15px;
+}
+form {
+     width:800px;
+}
+form span.fomrField{
+     width:inherit;
+     display:inline-block;
+     margin:5px 0;
+}
+form label {
+     float:left;
+     width:400px;
+     text-align:right;
+     padding:1px;
+     font-weight:bold;
+}
+form input {
+     padding:1px;
+     margin-left:20px;
+     background-color:#ddd;
+     border-style:groove;
+     border-width:5px;
+     border-color:#444;
+     border-radius:10px;
+}
+form select {
+     padding:1px 6px;
+     margin-left:20px;
+     background-color:groove;
+     border-width:10px;
+     border-color:#777;
+     border-radius:10px;
+     font-size:10%;
+}
+
+
+form #ajout {
+       margin-left=20px;
+}
+
+form submit {
+     border-color:#555;
+}
+
+
+form input.sansLabel {
+     margin-left:432px;
+     font-size:100%;
+     font-weight:bolder;
+     background-color:#333333;
+     color:blue;
+}
+form p {
+     background-color:#fff;
+     padding:0px;
+}
+form span.errorMsg {
+     font-size:90%;
+     font-style:italic;
+     color:red;
+}
+a:link {
+       text-decoration:underline;
+       color:#00e;
+}
+a:visited {
+	  text-decoration:underline;
+	  color:#00c;
+}
+a:hover {
+	text-decoration:underline;
+	color:#e40;
+}
+strong {
+       font-variant:small-caps;
+       font-weight:bolder;
+       color:black;
+}
+em {
+   font-style:italic;
+   color:black;
+}
+p {
+  background-color:#ddd;
+  text-align:justify;
+  padding:5pt;
+}

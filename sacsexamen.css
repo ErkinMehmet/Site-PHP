@@ -1,0 +1,85 @@
+
+body,
+html {
+    height:100%;
+    margin:0;
+    word-wrap:normal;
+}
+
+.header {
+    padding:10px 16px;
+    background:rgb(85,81,81);
+    color:#f1f1f1;
+    overflow:auto;
+    margin:0;
+    z-index:10;
+}
+
+.header a {
+    float:left;
+    color:#f2f2f2;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+    font-size:17px;
+    transition:background-color 0.8s, color 0.8s;
+}
+
+.header a:hover {
+    background-color:rgb(255,246,246);
+    color:rgb(0,0,0);
+    text-decoration: none;
+}
+
+.header a.active {
+    background-color:rgb(34,79,146);
+    color:white;
+}
+
+.content {
+    padding:0;
+}
+form {
+    position:relative;
+    margin-top:10%;
+    left:20%;
+    width:60%;
+    padding:20px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size:20px;
+  }
+
+  input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size:20px;
+  }
+
+  input[type=text]:focus {
+    border: 3px solid #555;
+  }
+
+  input[type=password]:focus {
+    border: 3px solid #555;
+  }
+ input[type=submit] {
+    background-color: skyblue;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size:20px;
+  }
+  input[type=submit]:hover {
+      opacity:0.8;
+  }

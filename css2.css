@@ -1,0 +1,37 @@
+#main {
+      border-collapse:separate;
+      border-spacing:6px;
+      caption-side:bottom;
+}
+
+#main>div{
+	display:table-cell;
+	border:2px solid white;
+	background-color:#555;
+	color:white;
+}
+
+#dos {
+     display:table;
+     width:500px;
+     height:150px;
+     border-spacing:5px;
+     background=#CCCC66;
+}
+p {
+  display:table-cell;
+  empty-cells:hide;
+  background-color:#555;
+}
+#a {
+   display:table;
+   width:100%;
+}
+
+#body {
+display:-wekit-box;
+-webkit-box-orient:vertical;
+box-orient:vertical;
+box-direction:reverse;
+-webkit-box-flex:1;
+}

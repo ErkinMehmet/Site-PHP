@@ -1,0 +1,161 @@
+label {
+      display:block;
+}
+input {
+      width:250px;
+      padding:4px;
+      border:1px solid #555;
+}
+input[type="submit"]{
+	width:auto;
+	padding:4px 15px;
+	background:#555;
+	color:#fff;
+	cursor:pointer;
+}
+input[required]{
+	border-right:8px soid orange;
+}
+input:invalid{
+	border-right:8px solid red;
+}
+input:valid{
+	border-right:8px solid green;
+}
+
+[data-tooltip]{
+	position:relative;
+	cursor:help;
+	border-bottom:1px dotted gray;
+}
+[data-tooltip]:hover:after{
+	content:attr(data-tooltip);
+	position:absolute;
+	top:1.5em; left:0;
+	white-space:nowrap;
+	padding:5px 10px;
+	background:#cde;
+}
+
+p {
+  width:200px;
+  padding:10px;
+  background::#6B9A49 url(m_hot.png) left top repeat:
+  color:#fff;
+  font-size:1.2em;
+  white-space:pre-wrap;
+  word-wrap:break-word;
+  -webkit-column-count:2;
+  -webkit-column-gap:10px;
+  -webkit-column-rule:1px solid #ccc;
+  border-radius:15px 0 40px 0;
+  opacity:0.9;
+  -webkit-box-shadow:8px 8px 8px 8px rgba(0,0,0,0.5) inset; 
+}
+p.hiding{
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+div {
+    background-image:url("m_hot.png")
+    background-position:left top
+    background-repeat:no-repeat;
+}
+div>p{
+	font-family:"HittheRoad",Arial,Helvetica,sans-serif
+	font-weight:bod;
+	font-size:26qpx;
+	color:#789;
+	text-shadow:0 0 9px #fff;
+	-webkit-transform:rotate(10deg) scaleX(-0.8) skew(-25deg,10deg);
+	-ms-writing-mode:bt-lr;
+}
+
+
+:checked + label {
+	 color:green;
+	 font-weight:bold;
+}
+table {
+      width:25em;
+      border-collapse:separate;
+      border-spacing:2px;
+      caption-side:bottom;
+}
+
+td.th{
+	padding:6px 12px;
+}
+th{
+	text-align:left;
+}
+td:last-child.th:last:child{
+	text-align:right;
+}
+
+table caption{
+      color:#555;
+      font-style:italic;
+      padding:10px;
+      border-bottom:1px solid #ccc;
+}
+tr:nth-child(odd){
+	background:#eee;
+}
+tr:nth-child(even){
+	background:#ddd;
+}
+tr:first-child{
+	background:#cba;
+	color:white;
+}
+table td:empty. table td:empty:hover{
+      backgorund:white;
+}
+table tr+tr:hover{
+      background:#bbb;
+      color:white;
+}
+table tr+tr td:hover. table tr+tr th:hover{
+      background:#777;
+}
+
+#yohann{
+	display:table;
+	table-layout:fixed;
+	width:100%;
+}
+#yohann p{
+	display:table-cell;
+	padding:5px;
+	margin:0;
+	background:#6B9A49;
+}
+
+#yohann p+p{
+	background:#E69B00;
+}
+#yohann p+p+p{
+	background:#333;
+}
+@media only screen and (max-width:600px){
+       #yohann p{display:block;}
+}
+
+.menu li{
+      list-style:none;
+}
+.menu a{
+      display:inline-block;
+      padding:8px 12px;
+      border:2px solid #fff;
+      text-shadow:0px 0px 6px #777;
+      backgorund:#98B924;
+      color:#fff;
+      text-decoration:none;
+      -webkit-transition:all .5s
+}
+.menu a:hover, .menu a :focus{
+      padding-right:150px;
+      background:#b9da40;
+}

@@ -1,0 +1,253 @@
+.typewriter {
+	    width:100%; 
+	    padding:0px;
+	    height:150px;
+	    postion:absolute;
+	    z-index:1;
+}
+
+.typewriter h1 {
+ font-family:verdana;
+ text-align:center;
+  overflow: hidden;
+  border-right: .15em solid blue; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .05em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+ text-shadow: 
+     30px 0px 10px #e4f068;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+body {
+     background-color:#fffacd;
+}
+.menu {
+      overflow:hidden;
+      white-space:nowrap;
+      background-image:linear-gradient(to right,#7fffd4,#7fff00);
+      font-size:18px;
+      border-radius:100px;
+      width:80%;
+      height:50px;
+      margin-top:10px;
+      margin-left:0;
+      text-align:center;
+      padding:5px;
+      font-size:24px;
+      font-family:"Papyrus";
+      box-shadow:20px 20px 100px #7fffd4;
+      font-weight:bold;
+}
+
+.navmes {
+	display:none;
+}
+
+.navmes:hover {
+	opacity:.8;
+}
+
+.nav {
+     list-style:none;
+} 
+
+.nav li{
+     display:block;
+     float:left;
+     margin-left:20px;
+}
+
+.nav a{
+     text-decoration:none;
+}
+
+.nav>li:hover,.nav>li:focus {
+     
+}
+
+#home {
+      display:none;
+}
+.second {
+	display:grid;
+	grid-template-columns:1fr 3fr;
+	padding:10px;
+	grid-gap:15px;
+}
+
+.left {
+      margin-left:0;
+      background-image:linear-gradient(to right bottom,#4863A0,#98AFC7);
+      padding:10px;
+      border-radius:1%;
+      animation: 
+      		 afficher 0.2s steps(40, end);
+}
+
+@keyframes afficher {
+  from { width: 0%;;}
+  to { width: 100%;}
+}
+
+.flip {
+      background-color:transparent;
+      width:90%;
+      perspective:1000px;
+}
+
+.inner {
+position:relative;
+width:100%;
+height:100%;
+text-align:center;
+transition:transform 0.9s;
+transform-style:preserve-3d;
+}
+
+.flip:hover .inner{
+transform:rotateY(180deg);
+}
+
+.front, .back{
+position:absolute;
+width:100%;
+height:100%;
+backface-visibility:hidden;
+}
+
+.front{
+background-color:#bbb;
+color:black;
+}
+
+.back{
+background-color:dodgerblue;
+color:white;
+transform:rotateY(180deg);
+}
+
+.back strong {
+padding:5px;
+}
+
+.fa {
+  position:absolute;
+  top:500px;
+  z-index:50;
+  padding:5px;
+  width: 40px;
+  height:40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 10px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  font-size:30px;
+  background: #3B5998;
+  color: white;
+  left:25px;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  left:85px;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+  left:145px;
+}
+
+
+.tab {
+	display:none;
+}
+
+.center {
+      margin-left:0%;
+      background-image:linear-gradient(to right bottom,#4863A0,#98AFC7);
+      padding:10px;
+      height:500px;
+      border-radius:1%;
+      overflow-y:scroll;
+      animation: 
+      		 afficher2 0.2s steps(80, end);
+}
+
+@keyframes afficher2{
+  from { width: 0%;;}
+  to { width: 100%;}
+}
+
+
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none; 
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;     
+}
+
+.active {
+  height: 25px;
+  width: 25px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none; 
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.9;
+  font-size:18px;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+
+
+
+.bottom {
+	height:100px;
+	background-color:#98fb98;
+	opacity:.8;
+	border-radius:10%;
+}
+
+.veil {
+      top:230px;
+      left:0;
+      display:block;
+      position:absolute;
+      width:0%;
+      height:1000px;
+      opacity:.8;
+      background-color:#fff;
+      z-index:60;
+}
