@@ -58,6 +58,11 @@
   </ul>
   <h1 id="titulo">Welcome to the website of Fernando!</h1>  
   <div style="margin-left:80%;margin-top:0;"><a style="text-decoration:none;" href="projectaen.php">English</a>&nbsp;&nbsp;<a style="text-decoration:none" href=<?php
+
+if (!isset($pagina)) {
+  $pagina = 1;
+}
+
 switch ($pagina) {
 case 1:
 echo "informationfr.php";
